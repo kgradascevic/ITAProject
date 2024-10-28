@@ -1,0 +1,17 @@
+/* whether user is authenticated or not */
+kc.authenticated
+
+/* get access token as a base64 string */
+kc.token
+
+/* get access token as a json object */
+kc.tokenParsed
+
+/* will access token be expired withing 5 seconds ? */
+kc.isTokenExpired(5)
+
+/* Update access token if it is going to expire within 10 seconds */
+kc.updateToken(10)
+
+/* Logout user */
+kc.logout({ redirectUri: 'http://localhost:3000/' })
